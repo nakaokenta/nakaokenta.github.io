@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+body {
+	background-color: #fafafa;
+	margin-bottom: 10px;
+}
+
+#blog {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 300px;
+	height: 300px;
+	margin: 50px 0px 300px 40px;
+	padding: 0 40px 0 10px;
+	background-color: #fafafa;
+	border: 5px solid #dbdbdb;
+	box-shadow: 10px 10px;
+}
+header {
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #454545;
+	z-index: 4;
+}
+h1 {
+margin-top: 50px;
+}
+#nav1 ul {
+	list-style-type: none;
+}
+header {
+	display: flex;
+	justify-content: between;
+}
+#logo {
+	width: 50%;
+	text-align: center;
+	color: #fafafa;
+	padding-top: 13px;
+	border: 3px solid #dbdbdb;
+	border-radius: 3px;
+}
+#nav1 {
+	width: 50%;
+}
+#nav1 ul {
+	display: flex;
+	padding: 0;
+	margin-top: 0;
+}
+#nav1 li {
+	justify-content: nowrap;
+	width: 33.3%;
+	border: 3px solid #dbdbdb;
+	padding: 13px 0 13px 0;
+	text-align: center;
+	border-left: 0;
+	border-radius: 3px;
+}
+footer {
+	text-align: center;
+}
+#nav1 li a {
+	color: #fafafa;
+}
+#header-image {
+	width: 100%;
+	height: 186px;
+	background-image: url("./header.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 3;
+	margin-top: 50px;
+	text-shadow: 2px 2px 1px #f00,
+	 -2px 2px 1px #ffdc00,
+	 2px -2px 1px #ffdc00,
+	 -2px -2px 1px #000;
+}
+#header-image div {
+	position: absolute;
+	bottom: 0;
+}
+#nav2 ul ul{
+	padding-left: 20px;
+}
+#matome {
+	display: flex;
+	justify-content: space-around;
+}
+#aside-left {
+	width: 60%;
+}
+#matome > aside {
+	width: 35%;
+}
+aside {
+	margin: 25px 20px 0 0;
+}
+#nav2 > ul{
+	margin-top: 50px;
+	padding-left: 20px;
+	line-height: 1.5;
+	border: 5px solid #dbdbdb;
+}
+#header2 {
+	line-height: 1.8;
+	margin: 20px 20px 40px 20px;
+	padding-left: 20px;
+	font-weight: bold;
+	border: 5px solid #dbdbdb;
+	box-shadow: 0 0 20px  #000;
+
+}
+#table1 {
+	border: 5px solid #dbdbdb;
+}
+table {
+	margin-left: 30px;
+}
+h2 {
+ margin: 0 0 0 10px;
+ color: #fafafa;
+}
+h1 {
+	margin: 0 0 10px 10px;
+	color: #fafafa;
+}
+#table1 {
+	 box-shadow: 5px 5px #f00;
+}
+#nav2 {
+	box-shadow: 5px 5px #ffdc00;
+}
+#nav1 li a {
+	text-decoration: none;
+	display: block;
+}
+@media screen and (min-width: 768px) {
+	#header2 {
+		width: 56%;
+		margin: 20px auto 40px;
+	}
+	#aside-left, #table1, #nav2{
+		width: 56%;
+	}
+	#header-image {
+		width: 76%;
+		margin: 50px auto 0;
+	}
+	#blog {
+		margin: 50px auto 300px;
+		padding: 0 80px 160px 10px;
+	}
+}
