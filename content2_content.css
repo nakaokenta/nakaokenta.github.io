@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+body {
+	background-color: #dbdbdb;
+	margin: 10px 30px 10px 30px;
+}
+header {
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #454545;	
+}
+h1 {
+margin-top: 70px;
+}
+ul {
+	list-style-type: none;
+}
+header {
+	display: flex;
+	justify-content: between;
+}
+#logo {
+	width: 50%;
+	text-align: center;
+	color: #fafafa;
+	padding-top: 13px;
+	border: 3px solid #fafafa;
+	border-radius: 3px;
+}
+nav {
+	width: 50%;
+}
+ul {
+	display: flex;
+	padding: 0;
+	margin-top: 0;
+}
+li {
+	justify-content: nowrap;
+	width: 33.3%;
+	border: 3px solid #fafafa;
+	padding: 13px 0 13px 0;
+	text-align: center;
+	border-left: 0;
+	border-radius: 3px;
+}
+li a {
+	color: #fafafa;
+	text-decoration: none;
+	display: block;
+}
+#title1, h2, h3{
+	background-color: #b4cce3;
+	padding: 10px;
+	text-decoration: underline;
+	box-shadow: 5px 5px rgba(0,0,0,0.2);
+}
+#title1 {
+	padding: 1px;
+	margin-top: 70px;
+}
+h4 {
+	margin: 0 0 0 250px;
+}
+h1 {
+	margin: 0 0 10px 10px;
+}
+th, td{
+	border: 1px solid #000;
+}
+.cash, .shop-info {
+	border-collapse: collapse;
+}
+.shop-info caption, .shop-info2 caption, .shop-info3 caption, .cash caption {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.shop-info th, .shop-info2 th, .shop-info3 th, .cash th {
+	width: 5em;
+}
+.cash td {
+	width: 20em;
+	height: 2em;
+}
+.herasu {
+	width: 5em;
+}
+.route, .route2, .route3 {
+	background-color: #c0ecae; 
+	border: solid 1px #7ad655; 
+	border-radius: 5px; 
+	text-align: center; 
+	padding: 0.8em; 
+}
+/*
+.route:hover {
+	opacity: 0.6; �}�E�X��u�����Ƃ��y��������
+}*/
+.route a, .route2 a, .route3 a {
+	text-decoration: none; 
+	color: #1e7c1b; 
+	font-weight:  bold; 
+	text-shadow: 1px 1px 0px #fff; 
+	display: block; 
+}
+table th {
+	background-color: #f3f4f5;
+}
+table tr:nth-of-type(2n+1) {
+	background-color: #fafbfc;
+}
+table th,
+table td {
+	border: 1px solid #dddedf;
+	padding: 6px; 
+}
+.route2, .route3 {
+	margin-top: 20px;
+}
+footer {
+margin-top: 40px;
+}
+.cash td {
+	background-color: #fff;
+}
+.cash .herasu {
+	width: 6em;
+	padding: 0;
+	text-align: center;
+}
+#michi1, #michi2, #maruhuku, #menu, #yamaki, #tatsuya, #ryouri5 {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+#maruhuku, #menu {
+	width: 680px;
+	height: 340px;
+}
+#ryouri1,#ryouri2, #ryouri3,#ryouri4 {
+	width: 307.2px;
+	height: 230.4px;
+}
+.ryouri1234 {
+	display: block;
+	text-align: center;
+}
+img {
+		box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+}
+#goukei {
+	color: #fafafa;
+	background-color: #f00;
+}
+.gyoukan {
+	line-height: 1.8;
+}
+@media screen and (min-width: 768px ){
+	h1, h2, h3, h4, .gyoukan{
+		text-align: center;
+	}
+	table {
+		margin: 0 auto;
+	}
+	.route, .route2, .route3 {
+		width: 53%;
+		margin: 20px auto 0;
+	}
+	h3 {
+		width: 70%;
+		margin: 18px auto;
+	}
+	h2 {
+		width: 60%;
+		margin: 19.9px auto;
+	}
+	#title1 {
+		width: 70%;
+		margin: 70px auto 0;
+	}
+}
