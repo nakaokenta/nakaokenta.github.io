@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+/* 　内部動作　　*/
+.startm {
+    display: none;
+}
+.rrr {
+    color: #f00;
+}
+.finish {
+    display: none;
+}
+.mein {
+    display: none;
+}
+
+
+/*　　装飾　　*/
+body {
+    background-color: #99ff99;
+    font-family: 'Gloria Hallelujah', cursive;
+    padding: 50px;
+}
+.top {
+    margin-top: 110px;
+    text-align: center;
+    line-height: 1.8;
+}
+.startm {
+    margin: 30px auto;
+    text-align: center;
+    line-height: 2;
+}
+.count1 {
+    margin: 0 auto;
+    padding: 0 110px;
+    background: #fef463;
+    font-size: 10em;
+    border-radius: 50%;
+    color: #fff;
+}
+.count2 {
+    margin: 0 20px 20px 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 55px;
+    background: #86f843;
+    font-size: 5em;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+}
+.mein {
+    line-height: 2;
+    font-weight: bold;
+
+}
+.num {
+    font-size: 1.5em;
+    margin: 0 8px;
+}
+.fa-moon {
+    font-size: 1.5em;
+}
+.underm {
+    background: linear-gradient(transparent 60%, #a8eaff 50%);
+}
+.ansc1,.ansc2,.ansc3,.ansc4 {
+    margin-right: 40px;
+}
+.but {
+    margin-top: 30px;
+}
+.returnt {
+    text-align: center;
+    bottom: 0;
+}
+.tbl {
+    margin: 40px auto 20px;
+}
+.message, .message2 {
+    text-align: center;
+}
+.message {
+    margin-top: 20px;
+}
+.message2 {
+    margin-top: 60px;
+}
+.tbl{
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+  }
+  td{
+    background: #f1fafe;
+    padding: 8px;
+  }
