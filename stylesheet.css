@@ -40,7 +40,6 @@ body {
     body {
         padding: 30px;
     }
-    }
     .header-main {
         text-align: center;
         padding-left: 0;
@@ -53,4 +52,4 @@ body {
         padding-left: 0;
         text-align: right;
     }
-
+}
