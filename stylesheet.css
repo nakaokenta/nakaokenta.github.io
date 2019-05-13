@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+body {
+    background-color: #dcd6d9;
+    padding: 50px;
+}
+.header-logo {
+    text-align: center;
+}
+.header-main {
+    padding: 20px 0 10px 300px;
+}
+.heading, .content, .footer-main {
+    padding: 10px 0 20px 200px;
+}
+.name {
+    padding-left: 800px;
+}
+.link {
+    padding: 8px 24px;
+    background-color: #5dca88;
+    box-shadow: 0 6px #1a7940;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .link:hover {
+    opacity: 1;
+  }
+.link:active {
+    box-shadow: none;
+    position: relative;
+    top: 6px;
+  }
