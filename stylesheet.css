@@ -34,3 +34,23 @@ body {
     position: relative;
     top: 6px;
   }
+
+
+@media (max-width: 670px ) {
+    body {
+        padding: 30px;
+    }
+    }
+    .header-main {
+        text-align: center;
+        padding-left: 0;
+    }
+    .heading, .content, .footer-main {
+        text-align: center;
+        padding-left: 0;
+    }
+    .name {
+        padding-left: 0;
+        text-align: right;
+    }
+
