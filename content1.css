@@ -111,7 +111,7 @@ body {
         content: '\A';
     }
     .rogo, .startn {
-        font-size: 28px;
+        font-size: 60%;
     }
     .count1 {
         padding: 0 90px;
