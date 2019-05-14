@@ -96,3 +96,24 @@ body {
     background: #f1fafe;
     padding: 8px;
   }
+
+@media screen and (max-width: 900px ) {
+    .ansc1::after {
+        white-space: pre;
+        content: '\A';
+    }
+    .ansc2::after {
+        white-space: pre;
+        content: '\A';
+    }
+    .ansc3::after {
+        white-space: pre;
+        content: '\A';
+    }
+    .rogo, .startn {
+        font-size: 28px;
+    }
+    .count1 {
+        padding: 0 90px;
+        font-size: 8em;
+}
