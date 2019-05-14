@@ -114,7 +114,10 @@ body {
         font-size: 150%;
     }
     .startm h1 {
-        font-size: 100%;
+        font-size: 120%;
+    }
+    .startm {
+    margin-top: 30px;
     }
     .count1 {
         padding: 0 90px;
