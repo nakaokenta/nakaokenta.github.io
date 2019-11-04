@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang = "ja" >
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1">
+    <title>在庫管理システム</title>
+    <meta name = "discription" content = "">
+    <meta name = "keywords" content = "">
+    <link rel = "stylesheet" href = "./normalize.css">
+    <link rel = "stylesheet" href = "./contentMain.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-main">
+            <h3>在庫管理システム概要</h3>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="heading">
+            <div class="heading-main">
+                <p>自作した在庫管理システムはSpring Tool Suite3.9.1(STS)上のローカルサーバーで作成したものです。</p>
+                <p>そのため、概要について写真でお伝えします。なお、ソースコードについては前画面でダウンロードできるようにしています。</p>
+                <p>画面数15画面、テスト項目数200～300、ステップ数約2000</p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <p class="imgExp">使用するテーブルは以下、4つ(zaiko_users,zaiko_maker,zaiko_shouhin,zaiko_order)です。今回はPostgreSQLを使用します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (1).png" alt="DB定義" width="45%" height="auto">
+                    <img src="./スクリーンショット (2).png" alt="DB定義" width="45%" height="auto">
+                </div>
+                <p class="imgExp">適当に初期データを挿入します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (3).png" alt="DB定義" width="45%" height="auto">
+                    <img src="./スクリーンショット (4).png" alt="DB定義" width="45%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">ログイン画面です。ログインに成功した場合、セッションを使用し、ログイン状態を保持します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (5).png" alt="ログイン画面" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">メニュー画面です。zaiko_usersテーブルのauthorityがONなら商品管理ボタンが左にあります。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (6).png" alt="メニュー画面" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">在庫照会　検索画面です。各検索条件を入力し、検索ボタンを押下します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (7).png" alt="在庫照会　検索画面" width="90%" height="auto">
+                </div>
+                <p class="imgExp">在庫照会　一覧画面です。検索条件にマッチしたデータをzaiko_syouhin,zaiko_maker,zaiko_orderテーブルから取得します。</p>
+                <div class="img">
+                        <img src="./スクリーンショット (8).png" alt="在庫照会　一覧画面" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">受注管理　登録画面です。受注数量を入力し、登録ボタンを押下します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (10).png" alt="受注管理　登録画面" width="90%" height="auto">
+                    <img src="./スクリーンショット (11).png" alt="受注管理　登録画面2" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">発注管理　登録画面です。発注数量を入力し、登録ボタンを押下します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (12).png" alt="発注管理　登録画面" width="90%" height="auto">
+                    <img src="./スクリーンショット (13).png" alt="発注管理　登録画面2" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">商品照会　検索画面です。各検索条件を入力し、検索ボタンを押下します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (14).png" alt="商品照会　検索画面" width="90%" height="auto">
+                </div>
+                <p class="imgExp">商品照会　一覧画面です。検索条件にマッチしたデータをzaiko_syouhin,zaiko_makerテーブルから取得します。</p>
+                <div class="img">
+                        <img src="./スクリーンショット (15).png" alt="商品照会　一覧画面" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">商品追加　実行画面です。各項目を入力し、追加ボタンを押下します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (19).png" alt="商品追加　実行画面" width="90%" height="auto">
+                    <img src="./スクリーンショット (18).png" alt="商品追加　実行画面2" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">商品更新　検索画面です。各検索条件を入力し、検索ボタンを押下します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (20).png" alt="商品更新　検索画面" width="90%" height="auto">
+                </div>
+                <p class="imgExp">
+                    商品更新　一覧画面です。検索条件にマッチしたデータをzaiko_syouhin,zaiko_makerテーブルから取得します。</br>
+                    次に各行の右端にある選択ボタンを押下します。今回は一番上の行の選択ボタンを押下します。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (21).png" alt="商品更新　一覧画面" width="90%" height="auto">
+                </div>
+                <p class="imgExp">
+                    商品更新　実行画面です。商品更新　一覧画面で選択した行の値が反映されます。</br>
+                    変更箇所を入力して更新ボタンを押下すると実行され、商品更新　検索画面に画面遷移します。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (23).png" alt="商品更新　実行画面" width="90%" height="auto">
+                    <img src="./スクリーンショット (24).png" alt="商品更新　検索画面2" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">商品削除　検索画面です。各検索条件を入力し、検索ボタンを押下します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (25).png" alt="商品削除　検索画面" width="90%" height="auto">
+                </div>
+                <p class="imgExp">
+                    商品削除　実行画面です。検索条件にマッチしたデータをzaiko_syouhin,zaiko_makerテーブルから取得します。</br>
+                    次に各行の右端にある選択ボタンを押下します。今回は一番上の行の選択ボタンを押下します。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (26).png" alt="商品削除　実行画面" width="90%" height="auto">
+                </div>
+                <p class="imgExp">
+                    商品削除　実行画面で選択した行を削除するかどうかポップアップを表示させます。</br>
+                    OKボタンを押下すると実行され、商品削除　検索画面に画面遷移します。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (27).png" alt="商品削除　実行画面2" width="90%" height="auto">
+                    <img src="./スクリーンショット (28).png" alt="商品削除　検索画面2" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">LOGOUTボタンを押下するとログイン画面に戻ります。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (29).png" alt="ログアウト画面" width="90%" height="auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
