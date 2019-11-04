@@ -27,7 +27,7 @@ h3 {
     body {
         padding: 30px;
     }
-    .header-main {
+    .header-main, .imgExp {
         text-align: center;
         padding-left: 0;
     }
