@@ -29,10 +29,10 @@ h3 {
     }
     .header-main, .imgExp {
         text-align: center;
-        padding-left: 0;
+        padding: 0;
     }
     .heading, .content, .footer-main {
         text-align: center;
-        padding-left: 0;
+        padding: 0;
     }
 }
