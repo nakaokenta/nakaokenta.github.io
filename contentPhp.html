@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang = "ja" >
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1">
+    <title>料理注文システム</title>
+    <meta name = "discription" content = "">
+    <meta name = "keywords" content = "">
+    <link rel = "stylesheet" href = "./normalize.css">
+    <link rel = "stylesheet" href = "./contentPhp.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-main">
+            <h3>料理注文システム概要</h3>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="heading">
+            <div class="heading-main">
+                <p>自作した料理注文システムはローカルサーバー環境としてMAMPを使用し、作成しています。</p>
+                <p>そのため、概要について写真でお伝えします。なお、ソースコードについては前画面でダウンロードできるようにしています。</p>
+                <p>画面数5画面、ステップ数約500</p>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <p class="imgExp">使用するテーブルは以下、2つ(menu,ordermenu)です。今回はMySQLを使用します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (35).png" alt="DB定義" width="45%" height="auto">
+                    <img src="./スクリーンショット (36).png" alt="DB定義" width="45%" height="auto">
+                </div>
+                <p class="imgExp">適当に初期データを挿入します。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (37).png" alt="DB定義" width="45%" height="auto">
+                    <img src="./スクリーンショット (38).png" alt="DB定義" width="45%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">トップ画面です。クッキーを使用し、今までの訪問人数をカウントするようにしています。</p>
+                <div class="img">
+                    <img src="./スクリーンショット (39).png" alt="トップ画面" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">
+                    「← メニュー一覧へ」のリンクをクリックすると、メニュー画面へ遷移します。</br>
+                    また、各メニュー名のリンクをクリックすると、各メニューのレビュー画面へ遷移します。</br>
+                    メニュー画面で注文する料理の個数を入力、もしくはセレクトボックスから選択します。<br/>
+                    負の値や全角入力ははじかれるようにしました。半角入力のみ受け付けます。</br>
+                    個数を入力したら「注文する」ボタンを押下します。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (40).png" alt="メニュー画面" width="90%" height="auto">
+                    <img src="./スクリーンショット (47).png" alt="レビュー画面" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">
+                    注文内容確認画面です。先ほど入力した個数をセッションに代入して値を保持します。注文の合計を表示します。<br/>
+                    「← メニュー一覧へ」のリンクを押下すると先ほどのメニュー画面に遷移します。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (41).png" alt="注文内容確認画面" width="90%" height="auto">
+                </div>
+                <p class="imgExp">セッションから値を取得して、先ほど入力した値を保持した状態のままメニュー画面を表示させます。</p>
+                <div class="img">
+                        <img src="./スクリーンショット (42).png" alt="メニュー画面(値保持)" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">
+                    先ほどの注文内容確認画面までページを遷移し、「注文を確定する」のリンクを押下すると、注文確定画面が表示されます。</br>
+                    この際に先ほど注文した内容がDB上に登録されます。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (43).png" alt="注文確定画面" width="90%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <p class="imgExp">
+                    DB上の値を確認すると、テーブルに値が追加されています。</br>
+                    menuテーブルは変化ありません。m_codeはPRIMARY KEYに設定してます。</br>
+                    すでに設定しているメニューに関しては重複してDB上に登録されないようにしています。
+                </p>
+                <div class="img">
+                    <img src="./スクリーンショット (45).png" alt="menuテーブル" width="90%" height="auto">
+                    <img src="./スクリーンショット (46).png" alt="ordermenuテーブル" width="90%" height="auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
